@@ -1,0 +1,146 @@
+/* functions */
+/* Remove padding and margin */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* reset */
+body,
+a,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Defaults */
+body {
+  background-color: #ffffff;
+}
+
+.default {
+  padding: 10px;
+}
+
+.padding-0 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.header-container {
+  margin: auto;
+}
+
+.header-container .clinic-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.header-container .clinic-logo img {
+  max-width: 120px;
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+.header-container .clinic-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.header-container .clinic-name h3 {
+  color: #4575bd;
+}
+
+/* --Contact --*/
+.contact-inside-box {
+  color: #4575bd;
+}
+
+.phone-num {
+  color: #4575bd;
+}
+
+/* --Navigation --*/
+.navbar-brand {
+  visibility: hidden;
+}
+
+/* --Mobile First Version --*/
+@media only screen and (max-width: 480px) {
+  header {
+    background-color: #82b482;
+  }
+  header .clinic-logo img {
+    max-width: 100px;
+    width: 100%;
+    border-radius: 50%;
+  }
+  header .contact {
+    text-align: center;
+    padding-top: 10px;
+  }
+  header .icons {
+    margin-right: 14px;
+    font-size: 1.4rem;
+  }
+}
+
+/* --Tablet Version --*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  header .contact {
+    text-align: center;
+    padding-top: 10px;
+  }
+  .icons {
+    margin-right: 14px;
+    font-size: 1.8rem;
+  }
+}
+
+/* --Laptop Version --*/
+@media (min-width: 769px) {
+  .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .clinic-logo img {
+    max-width: 180px;
+  }
+  .contact-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .icons {
+    margin-right: 14px;
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
