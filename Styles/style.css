@@ -25,10 +25,6 @@ li {
 }
 
 /* Defaults */
-body {
-  background-color: #ffffff;
-}
-
 .default {
   padding: 10px;
 }
@@ -36,6 +32,11 @@ body {
 .padding-0 {
   padding-right: 0;
   padding-left: 0;
+}
+
+/*Header*/
+header {
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
 
 .header-container {
@@ -53,6 +54,7 @@ body {
 .header-container .clinic-logo img {
   max-width: 120px;
   width: 100%;
+  height: auto;
   display: block;
   border-radius: 50%;
 }
@@ -67,6 +69,20 @@ body {
 
 .header-container .clinic-name h3 {
   color: #4575bd;
+}
+
+/*--Navbar--*/
+nav .navbar-toggler {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+/*--Home--*/
+.home {
+  height: 80vh;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.5)), to(rgba(40, 180, 133, 0.5))), url(/Images/jan-kopriva-nex3P5iBnPg-unsplash.jpg);
+  background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.5), rgba(40, 180, 133, 0.5)), url(/Images/jan-kopriva-nex3P5iBnPg-unsplash.jpg);
+  background-size: cover;
+  background-repeat: none;
 }
 
 /* --Contact --*/
@@ -85,9 +101,6 @@ body {
 
 /* --Mobile First Version --*/
 @media only screen and (max-width: 480px) {
-  header {
-    background-color: #82b482;
-  }
   header .clinic-logo img {
     max-width: 100px;
     width: 100%;
@@ -100,6 +113,9 @@ body {
   header .icons {
     margin-right: 14px;
     font-size: 1.4rem;
+  }
+  #home {
+    height: 60vh;
   }
 }
 
