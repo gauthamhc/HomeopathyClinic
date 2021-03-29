@@ -1,6 +1,7 @@
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
+$color-button-primary: #296246;
 
 /* functions */
 @mixin flexSpacearound {
@@ -9,11 +10,17 @@ $color-primary-dark: #28b485;
   justify-content: space-around;
 }
 
+@mixin flexCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Remove padding and margin */
 * {
   margin: 0;
   padding: 0;
-  border: 0;
   box-sizing: border-box;
 }
 
@@ -25,6 +32,16 @@ ul,
 li {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   color: inherit;
 }
@@ -41,6 +58,11 @@ li {
 .padding-0 {
   padding-right: 0;
   padding-left: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 /*Header*/
 
@@ -72,7 +94,6 @@ header {
 
 /*--Navbar--*/
 nav {
-  // background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   .navbar-toggler {
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   }
@@ -104,6 +125,19 @@ nav {
 .navbar-brand {
   visibility: hidden;
 }
+
+/* --Buttons --*/
+.btn {
+  border: 2px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  background: transparent;
+  &:hover {
+    color: $color-button-primary;
+    background: #fff;
+  }
+}
+
 /* --Mobile First Version --*/
 
 @media only screen and (max-width: 480px) {
@@ -124,9 +158,33 @@ nav {
     }
   }
 
-  // #home {
-  //   height: 60vh;
-  // }
+  #home {
+    @include flexCenter();
+    color: #fff;
+    text-align: center;
+    .text-box {
+      margin-bottom: 20px;
+    }
+    .text-main {
+      text-transform: uppercase;
+      backface-visibility: hidden;
+      font-size: 1.6rem;
+      line-height: 1.6;
+      font-weight: bold;
+      letter-spacing: 04px;
+    }
+    .btn-knw {
+      padding: 1.2rem;
+      text-transform: capitalize;
+      a {
+        color: #094628;
+      }
+    }
+  }
+
+  #about {
+    height: 100vh;
+  }
 }
 
 /* --Tablet Version --*/
@@ -142,6 +200,27 @@ nav {
   .icons {
     margin-right: 14px;
     font-size: 1.8rem;
+  }
+  #home {
+    @include flexCenter();
+    color: #fff;
+    text-align: center;
+    .text-main {
+      text-transform: uppercase;
+      backface-visibility: hidden;
+      font-size: 1.8rem;
+      line-height: 1.6;
+      font-weight: bold;
+      letter-spacing: 04px;
+    }
+    .btn-knw {
+      padding: 1.2rem;
+      text-transform: capitalize;
+      &:hover {
+        color: #296246;
+        background: #fff;
+      }
+    }
   }
 }
 

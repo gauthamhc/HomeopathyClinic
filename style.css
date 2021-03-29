@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -16,6 +15,18 @@ ul,
 li {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   color: inherit;
 }
@@ -112,6 +123,11 @@ nav .navbar-toggler {
   background: transparent;
 }
 
+.btn:hover {
+  color: #296246;
+  background: #fff;
+}
+
 /* --Mobile First Version --*/
 @media only screen and (max-width: 480px) {
   header .clinic-logo img {
@@ -144,6 +160,9 @@ nav .navbar-toggler {
     color: #fff;
     text-align: center;
   }
+  #home .text-box {
+    margin-bottom: 20px;
+  }
   #home .text-main {
     text-transform: uppercase;
     -webkit-backface-visibility: hidden;
@@ -157,9 +176,8 @@ nav .navbar-toggler {
     padding: 1.2rem;
     text-transform: capitalize;
   }
-  #home .btn-knw:hover {
-    color: #296246;
-    background: #fff;
+  #home .btn-knw a {
+    color: #094628;
   }
   #about {
     height: 100vh;
@@ -201,6 +219,14 @@ nav .navbar-toggler {
     line-height: 1.6;
     font-weight: bold;
     letter-spacing: 04px;
+  }
+  #home .btn-knw {
+    padding: 1.2rem;
+    text-transform: capitalize;
+  }
+  #home .btn-knw:hover {
+    color: #296246;
+    background: #fff;
   }
 }
 
