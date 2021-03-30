@@ -138,6 +138,18 @@ nav {
   }
 }
 
+.btn-read {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* --About Page --*/
+
+#more {
+  display: none;
+}
+
 /* --Mobile First Version --*/
 
 @media only screen and (max-width: 480px) {
@@ -182,11 +194,24 @@ nav {
     }
   }
 
-  #about {
-    height: 100vh;
+  .about-heading {
+    font-family: "Poppins", sans-serif;
+  }
+  .about-pic {
+    text-align: center;
+  }
+  .about-info {
+    padding: 10px;
+    font-family: "Rubik", sans-serif;
+    line-height: 1.8;
+  }
+  .about-pic img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
   }
 }
-
 /* --Tablet Version --*/
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -205,20 +230,23 @@ nav {
     @include flexCenter();
     color: #fff;
     text-align: center;
-    .text-main {
-      text-transform: uppercase;
-      backface-visibility: hidden;
-      font-size: 1.8rem;
-      line-height: 1.6;
-      font-weight: bold;
-      letter-spacing: 04px;
-    }
-    .btn-knw {
-      padding: 1.2rem;
-      text-transform: capitalize;
-      &:hover {
-        color: #296246;
-        background: #fff;
+    .text-box {
+      max-width: 90%;
+      .text-main {
+        text-transform: uppercase;
+        backface-visibility: hidden;
+        font-size: 1.8rem;
+        line-height: 1.6;
+        font-weight: bold;
+        letter-spacing: 04px;
+      }
+      .btn-knw {
+        padding: 1.2rem;
+        text-transform: capitalize;
+        &:hover {
+          color: #296246;
+          background: #fff;
+        }
       }
     }
   }
@@ -244,5 +272,31 @@ nav {
   .icons {
     margin-right: 14px;
     font-size: 2rem;
+  }
+  #home {
+    @include flexCenter();
+    color: #fff;
+    text-align: center;
+    .text-box {
+      max-width: 80%;
+      .text-main {
+        text-transform: uppercase;
+        backface-visibility: hidden;
+        font-size: 2rem;
+        line-height: 1.6;
+        font-weight: bold;
+        letter-spacing: 04px;
+      }
+      .btn-knw {
+        padding: 1rem;
+        text-transform: capitalize;
+        font-size: 1.2rem;
+        font-weight: bold;
+        &:hover {
+          color: #296246;
+          background: #fff;
+        }
+      }
+    }
   }
 }
