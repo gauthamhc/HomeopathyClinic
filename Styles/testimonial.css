@@ -1,29 +1,79 @@
 /* /Images/reviews/review1.JPG */
 
-#testimonials {
+#testimonial {
+  width: 100vw;
+  height: 100vh;
   text-align: center;
   background-color: #ef8172;
-  color: #fff;
 }
 
-.google-image {
-  width: 800px;
-  height: 300px;
-  width: 100%;
+.card {
+  height: 80vh;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  position: relative;
+}
+.source {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 4%;
+}
+.card-Para {
+  padding: 5% 15%;
 }
 
 .carousel-item {
-  padding: 7% 15%;
+  padding: 3% 15%;
 }
 
 .google_review-header {
   padding-top: 3%;
+  color: #fff;
 }
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+/* Ratingss */
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
 /* --Mobile First Version --*/
 @media only screen and (max-width: 480px) {
-  .google-image {
-    width: 100%;
-  }
 }
 
 /* --Tablet Version --*/
