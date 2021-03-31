@@ -1,0 +1,35 @@
+/* /Images/reviews/review1.JPG */
+
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.google-image {
+  width: 800px;
+  height: 300px;
+  width: 100%;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.google_review-header {
+  padding-top: 3%;
+}
+/* --Mobile First Version --*/
+@media only screen and (max-width: 480px) {
+  .google-image {
+    width: 100%;
+  }
+}
+
+/* --Tablet Version --*/
+@media (min-width: 769px) {
+}
+
+/* --Laptop Version --*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+}

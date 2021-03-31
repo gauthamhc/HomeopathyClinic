@@ -5,9 +5,9 @@
   --color-primary-extradark: #296246;
 }
 
-#services {
+/* #services {
   background-image: url(/Images/gabriele-diwald-iWKgNxFaLDs-unsplash.jpg);
-}
+} */
 
 .services-info {
   text-align: center;
@@ -15,11 +15,16 @@
 }
 .services-list {
   padding: 10px 30px;
+  text-align: center;
 }
 
 .services-lists-items img {
   color: #fff;
   background-color: #08631f;
+  padding: 20px;
+}
+.services-lists-items h4 {
+  padding: 20px 10px;
 }
 
 /* --Mobile First Version --*/
