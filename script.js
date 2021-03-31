@@ -29,3 +29,5 @@ function myFunction1() {
     moreText1.style.display = "inline";
   }
 }
+
+$(".carousel").carousel();
