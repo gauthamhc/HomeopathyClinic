@@ -160,9 +160,13 @@ nav {
 .about-para {
   color: #434343;
 }
-// .about-main {
-//   max-width: 800px;
-// }
+
+#about {
+  background-image: url(./Images/pawel-czerwinski-ZhcIxweGXXw-unsplash.jpg);
+  background-size: cover;
+  background-repeat: none;
+}
+
 /* --Mobile First Version --*/
 
 @media only screen and (max-width: 480px) {
@@ -336,15 +340,11 @@ nav {
       }
     }
   }
-  #about {
+  .center {
     max-width: 934px;
     text-align: center;
   }
-  .about-main {
-  }
-  // .about-pic {
-  //   text-align: center;
-  // }
+
   .about-heading {
     padding: 20px 0;
   }

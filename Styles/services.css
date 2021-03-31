@@ -1,0 +1,35 @@
+:root {
+  --color-primary: #55c57a;
+  --color-primary-light: #7ed56f;
+  --color-primary-dark: #28b485;
+  --color-primary-extradark: #296246;
+}
+
+#services {
+  background-image: url(/Images/gabriele-diwald-iWKgNxFaLDs-unsplash.jpg);
+}
+
+.services-info {
+  text-align: center;
+  padding: 60px 20px;
+}
+.services-list {
+  padding: 10px 30px;
+}
+
+.services-lists-items img {
+  color: #fff;
+  background-color: #08631f;
+}
+
+/* --Mobile First Version --*/
+@media only screen and (max-width: 480px) {
+}
+
+/* --Tablet Version --*/
+@media (min-width: 769px) {
+}
+
+/* --Laptop Version --*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+}

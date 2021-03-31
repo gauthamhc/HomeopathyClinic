@@ -151,6 +151,12 @@ nav .navbar-toggler {
   color: #434343;
 }
 
+#about {
+  background-image: url(./Images/pawel-czerwinski-ZhcIxweGXXw-unsplash.jpg);
+  background-size: cover;
+  background-repeat: none;
+}
+
 /* --Mobile First Version --*/
 @media only screen and (max-width: 480px) {
   header .clinic-logo img {
@@ -359,7 +365,7 @@ nav .navbar-toggler {
     color: #296246;
     background: #fff;
   }
-  #about {
+  .center {
     max-width: 934px;
     text-align: center;
   }
