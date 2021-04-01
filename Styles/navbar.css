@@ -1,0 +1,23 @@
+/* --Navigation --*/
+
+.navbar-brand {
+  visibility: hidden;
+}
+
+/*--Navbar--*/
+
+.navbar-toggler {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+/* --Mobile First Version --*/
+
+@media only screen and (max-width: 480px) {
+}
+/* --Tablet Version --*/
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+}
+/* --Laptop Version --*/
+@media (min-width: 769px) {
+}
