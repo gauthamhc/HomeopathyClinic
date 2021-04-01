@@ -54,11 +54,6 @@ blockquote:before {
 }
 /* Ratingss */
 
-.card-heading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .heading {
   font-size: 25px;
   margin-right: 25px;
@@ -74,10 +69,22 @@ blockquote:before {
 
 /* --Mobile First Version --*/
 @media only screen and (max-width: 480px) {
+  .heading {
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+  .card-heading {
+    text-align: center;
+  }
 }
 
 /* --Tablet Version --*/
 @media (min-width: 769px) {
+  .card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* --Laptop Version --*/

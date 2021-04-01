@@ -1,0 +1,72 @@
+* root {
+  --color-primary: #55c57a;
+  --color-primary-light: #7ed56f;
+  --color-primary-dark: #28b485;
+  --color-button-primary: #296246;
+}
+
+/* Remove padding and margin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* reset */
+body,
+a,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style-type: none;
+}
+
+/* Defaults */
+
+.default {
+  padding: 10px;
+}
+
+.padding-0 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+/* --Buttons --*/
+.btn {
+  border: 2px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  background: transparent;
+}
+.btn:hover {
+  color: var(--color-primary);
+  background: #fff;
+}
+
+.btn-read {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 1rem;
+}

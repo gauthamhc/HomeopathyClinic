@@ -1,0 +1,121 @@
+* root {
+  --color-primary: #55c57a;
+  --color-primary-light: #7ed56f;
+  --color-primary-dark: #28b485;
+  --color-button-primary: #296246;
+}
+
+/*--Home--*/
+.home {
+  height: 95vh;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(rgba(126, 213, 111, 0.5)),
+      to(rgba(40, 180, 133, 0.5))
+    ),
+    url(/Images/jan-kopriva-nex3P5iBnPg-unsplash.jpg);
+  background: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.5),
+      rgba(40, 180, 133, 0.5)
+    ),
+    url(/Images/jan-kopriva-nex3P5iBnPg-unsplash.jpg);
+  background-size: cover;
+  background-repeat: none;
+}
+/* --Mobile First Version --*/
+
+@media only screen and (max-width: 480px) {
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+
+  .text-box {
+    margin-bottom: 20px;
+  }
+  .text-main {
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-weight: bold;
+    letter-spacing: 04px;
+  }
+  .btn-knw {
+    padding: 1.2rem;
+    text-transform: capitalize;
+    color: #094628;
+  }
+}
+
+/* --Tablet Version --*/
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  .text-box {
+    max-width: 90%;
+  }
+  .text-main {
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-weight: bold;
+    letter-spacing: 04px;
+  }
+  .btn-knw {
+    padding: 1.2rem;
+    text-transform: capitalize;
+  }
+  .btn-knw:hover {
+    color: #296246;
+    background: #fff;
+  }
+}
+
+/* --Laptop Version --*/
+@media (min-width: 769px) {
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  .text-box {
+    max-width: 80%;
+  }
+  .text-main {
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: bold;
+    letter-spacing: 04px;
+  }
+  .btn-knw {
+    padding: 1rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .btn-knw:hover {
+    color: #296246;
+    background: #fff;
+  }
+}
