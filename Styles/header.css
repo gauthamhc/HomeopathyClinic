@@ -1,73 +1,56 @@
 header {
-  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  background: var(--primary-color);
+  color: #fff;
 }
 
-.header-container {
-  margin: auto;
+header h1 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: var(--font-family-1);
+  font-size: 2.4rem;
 }
 
 .clinic-logo {
   display: flex;
   align-self: center;
 }
+
+.clinic-name {
+  display: flex;
+  align-self: center;
+}
+
 .clinic-logo img {
-  max-width: 120px;
+  max-width: 100px;
   width: 100%;
   height: auto;
   display: block;
   border-radius: 50%;
 }
-.clinic-name {
-  display: flex;
-  align-self: center;
-}
-.clinic-name h3 {
-  color: #4575bd;
-}
 
-/* --Contact --*/
-.contact-inside-box {
-  color: #4575bd;
+.contact {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-family: var(--font-family-3);
+  font-weight: 400;
 }
 
-.phone-num {
-  color: #4575bd;
+.icons {
+  margin-right: 1rem;
+  font-size: 1.4rem;
 }
 
-/* --Mobile First Version --*/
+/* * // Medium devices (tablets, 768px and up) */
 
-@media only screen and (max-width: 480px) {
-  .clinic-logo img {
-    max-width: 100px;
-    width: 100%;
-    border-radius: 50%;
-  }
-  .contact {
-    text-align: center;
-    padding-top: 10px;
-  }
-  .icons {
-    margin-right: 14px;
-    font-size: 1.4rem;
-  }
-}
-
-/* --Tablet Version --*/
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .contact {
-    text-align: center;
-    padding-top: 10px;
-  }
-
+@media (min-width: 768px) {
   .icons {
     margin-right: 14px;
     font-size: 1.8rem;
   }
 }
-/* --Laptop Version --*/
-@media (min-width: 769px) {
-  .header-container {
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .flex-center {
     display: flex;
     justify-content: space-around;
   }
@@ -80,7 +63,8 @@ header {
     justify-content: center;
   }
   .icons {
-    margin-right: 14px;
-    font-size: 2rem;
+    font-size: 4rem;
   }
 }
+
+/* // Extra large devices (large desktops, 1200px and up) */
