@@ -10,15 +10,20 @@
   --font-family-3: "Lato", sans-serif;
   --font-family-4: "Ubuntu", sans-serif;
 }
-/* col-4 col-md-5 col-lg-2 */
-
-/* col col-sm-4 col-xl-4 */
 
 html {
   font-size: 62.5%;
 }
 
 /* Remove padding and margin */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 * {
   margin: 0;
   padding: 0;

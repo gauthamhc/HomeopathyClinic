@@ -1,23 +1,11 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .background {
-  background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);
+  background: linear-gradient(
+    to right,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
   font-size: 12px;
 }
-
-/* body,
-button,
-input {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-} */
 
 .background {
   display: flex;
@@ -72,15 +60,15 @@ input {
 }
 
 .screen-header-button.close {
-  background: #ed1c6f;
+  background: var(--primary-color);
 }
 
 .screen-header-button.maximize {
-  background: #e8e925;
+  background: var(--success-color);
 }
 
 .screen-header-button.minimize {
-  background: #74c54f;
+  background: var(--error-color);
 }
 
 .screen-header-right {
@@ -101,7 +89,7 @@ input {
 
 .screen-body-item {
   flex: 1;
-  padding: 50px;
+  padding: 2rem;
 }
 
 .screen-body-item.left {
@@ -113,8 +101,9 @@ input {
   display: flex;
   flex-direction: column;
   position: relative;
-  color: #ea1d6f;
-  font-size: 26px;
+  color: #fff;
+  font-size: 2.6rem;
+  font-family: var(--font-family-1);
 }
 
 .app-title:after {
@@ -125,12 +114,12 @@ input {
   bottom: -10px;
   width: 25px;
   height: 4px;
-  background: #ea1d6f;
+  background: var(--error-color);
 }
 
 .app-contact {
   margin-top: auto;
-  font-size: 8px;
+  font-size: 1rem;
   color: #888;
 }
 
@@ -177,33 +166,14 @@ input {
 .app-form-button {
   background: none;
   border: none;
-  color: #ea1d6f;
+  color: var(--error-color);
   font-size: 14px;
   cursor: pointer;
   outline: none;
 }
 
 .app-form-button:hover {
-  color: #b9134f;
-}
-
-.credits {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  color: #ffa4bd;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.credits-link {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
+  color: var(--success-color);
 }
 
 .dribbble {
