@@ -35,6 +35,7 @@ li {
   padding: 0;
   text-decoration: none;
   color: inherit;
+  line-height: 1.6;
 }
 a:hover {
   text-decoration: none;

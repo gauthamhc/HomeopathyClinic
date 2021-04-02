@@ -29,8 +29,10 @@ header h1 {
 }
 
 .contact {
+  font-family: var(--font-family-2);
   padding-top: 1rem;
   font-size: 1.5rem;
+  letter-spacing: 1px;
   font-family: var(--font-family-3);
   font-weight: 400;
 }
@@ -44,7 +46,6 @@ header h1 {
 
 @media (min-width: 768px) {
   .icons {
-    margin-right: 14px;
     font-size: 1.8rem;
   }
 }
@@ -63,7 +64,7 @@ header h1 {
     justify-content: center;
   }
   .icons {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
 

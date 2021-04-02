@@ -1,23 +1,26 @@
-/* --Navigation --*/
+.navbar {
+  font-family: var(--font-family-1);
+  font-size: 1.5rem;
+  padding: 0 2rem;
+  font-weight: 500;
+}
+
+.navbar-brand img {
+  max-height: 30px;
+  border-radius: 10px;
+}
 
 .navbar-brand {
   visibility: hidden;
 }
 
-/*--Navbar--*/
-
-.navbar-toggler {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+@media (min-width: 768px) {
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar-brand {
+    visibility: visible;
+  }
 }
 
-/* --Mobile First Version --*/
-
-@media only screen and (max-width: 480px) {
-}
-/* --Tablet Version --*/
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-}
-/* --Laptop Version --*/
-@media (min-width: 769px) {
-}
+/* // Extra large devices (large desktops, 1200px and up) */
