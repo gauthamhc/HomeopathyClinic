@@ -56,7 +56,7 @@ blockquote:before {
 /* Ratingss */
 
 .heading {
-  font-size: 2rem;
+  font-size: 2.4rem;
   letter-spacing: 0.6px;
 }
 
@@ -83,6 +83,12 @@ blockquote:before {
   }
   .card-heading {
     text-align: center;
+  }
+  .card {
+    height: 70vh;
+  }
+  .heading {
+    font-size: 2rem;
   }
 }
 

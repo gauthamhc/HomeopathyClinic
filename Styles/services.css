@@ -1,40 +1,49 @@
-:root {
-  --color-primary: #55c57a;
-  --color-primary-light: #7ed56f;
-  --color-primary-dark: #28b485;
-  --color-primary-extradark: #296246;
-}
-
-/* #services {
-  background-image: url(/Images/gabriele-diwald-iWKgNxFaLDs-unsplash.jpg);
-} */
-
 .services-info {
   text-align: center;
   padding: 60px 20px;
+  font-family: var(--font-family-1);
+  font-weight: 600;
+  font-size: 2.4rem;
+  letter-spacing: 1px;
 }
 .services-list {
-  padding: 10px 30px;
   text-align: center;
+  font-family: var(--font-family-4);
+}
+
+.card-services {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  margin: 1rem;
+  transition: all 0.3s ease;
+}
+
+.card-services:hover {
+  transform: translateY(-15px);
 }
 
 .services-lists-items img {
-  color: #fff;
-  background-color: #08631f;
-  padding: 20px;
+  background-color: var(--primary-color);
+  padding: 1rem;
 }
 .services-lists-items h4 {
-  padding: 20px 10px;
+  padding: 1rem;
 }
 
-/* --Mobile First Version --*/
-@media only screen and (max-width: 480px) {
+/* Medium devices (Laptop) */
+@media (min-width: 768px) {
+  .services-list {
+    padding-left: 15rem;
+  }
 }
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) {
+  .flex-center {
+    display: flex;
+    justify-content: space-around;
+  }
 
-/* --Tablet Version --*/
-@media (min-width: 769px) {
-}
-
-/* --Laptop Version --*/
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-}
+} */
