@@ -25,6 +25,7 @@
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 04px;
+  animation: slideInFromRight 1s ease-in;
 }
 .btn-knw {
   padding: 1.2rem;
@@ -33,6 +34,7 @@
   font-family: var(--font-family-1);
   font-weight: 600;
   font-size: 1.2rem;
+  animation: slideInFromLeft 1s ease-in;
 }
 
 .btn-knw:hover {

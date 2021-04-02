@@ -7,92 +7,57 @@
 #more1 {
   display: none;
 }
-.about-heading {
-  font-family: "Poppins", sans-serif;
-}
 
 .about-para {
   color: #434343;
 }
 
 #about {
-  background-image: url(./Images/pawel-czerwinski-ZhcIxweGXXw-unsplash.jpg);
+  background-image: url(/Images/about_bg_image.jpg);
   background-size: cover;
   background-repeat: none;
+  font-family: var(--font-family-2);
 }
-/* --Mobile First Version --*/
+.about-heading {
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 1rem 0;
+}
+.about {
+  text-align: justify;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.about-pic {
+  text-align: center;
+}
 
-@media only screen and (max-width: 480px) {
-  .about-pic {
-    text-align: center;
-  }
-  .about-heading {
-    padding: 20px 0;
-  }
-  .about-info {
-    padding: 30px 10px;
-    font-family: "Rubik", sans-serif;
-    line-height: 1.8;
-  }
-  .about-pic img {
-    max-width: 300px;
-    width: 100%;
-    border-radius: 10px;
-    padding: 5px;
-  }
-  .line-break {
-    padding: 10px 0;
+.about-info {
+  padding: 1rem;
+  letter-spacing: 0.4px;
+}
+.about-pic img {
+  max-width: 200px;
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px;
+}
+.line-break {
+  padding: 10px 0;
+}
+/* --Laptop Version --*/
+
+@media (min-width: 768px) {
+  .about-phani,
+  .about-smriti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
-/* --Tablet Version --*/
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .about-pic {
-    text-align: center;
-  }
-  .about-heading {
-    padding: 20px 0;
-  }
-  .about-info {
-    padding: 30px 10px;
-    font-family: "Rubik", sans-serif;
-    line-height: 1.8;
-  }
-  .about-pic img {
-    max-width: 300px;
-    width: 100%;
-    border-radius: 10px;
-    padding: 5px;
-  }
-  .line-break {
-    padding: 10px;
-  }
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
 }
 
 /* --Laptop Version --*/
-@media (min-width: 769px) {
-  .center {
-    max-width: 934px;
-    text-align: center;
-  }
-
-  .about-heading {
-    padding: 20px 0;
-  }
-  .about-info {
-    padding: 30px 20px;
-    font-family: "Rubik", sans-serif;
-    line-height: 1.8;
-    text-align: left;
-  }
-  .about-pic img {
-    max-width: 320px;
-    width: 100%;
-    max-height: 320px;
-    border-radius: 10px;
-    padding: 5px;
-  }
-  .line-break {
-    padding: 10px 0;
-  }
-}
