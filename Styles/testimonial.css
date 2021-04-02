@@ -1,10 +1,8 @@
 /* /Images/reviews/review1.JPG */
 
 #testimonial {
-  width: 100vw;
-  height: 100vh;
   text-align: center;
-  background-color: #ef8172;
+  background-color: var(--primary-color);
 }
 
 .card {
@@ -23,30 +21,33 @@
   right: 0;
   bottom: 0;
   padding-right: 4%;
-}
-.card-Para {
-  padding: 5% 15%;
-}
-
-.carousel-item {
-  padding: 3% 15%;
+  color: var(--dark-color);
 }
 
 .google_review-header {
-  padding-top: 3%;
+  padding-top: 3rem;
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-family: var(--font-family-1);
   color: #fff;
 }
+
+.carousel-item {
+  padding: 5% 15%;
+}
+
 blockquote {
   padding: 2%;
   font-style: italic;
   line-height: 145%;
   position: relative;
-  margin-top: 40px;
+  margin-top: 2rem;
 }
 
 blockquote:before {
   content: "\201C";
-  font-size: 500%;
+  font-size: 300%;
   display: block;
   position: absolute;
   top: -5px;
@@ -55,22 +56,29 @@ blockquote:before {
 /* Ratingss */
 
 .heading {
-  font-size: 25px;
-  margin-right: 25px;
+  font-size: 2rem;
+  letter-spacing: 0.6px;
 }
 
 .fa {
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 .checked {
   color: orange;
 }
 
+.card-Para {
+  padding: 4% 15%;
+  font-family: var(--font-family-3);
+  font-size: 1.2rem;
+  letter-spacing: 0.4px;
+}
+
 /* --Mobile First Version --*/
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   .heading {
-    margin-bottom: 25px;
+    margin-bottom: 1.8rem;
     margin-left: 0;
   }
   .card-heading {
@@ -84,6 +92,16 @@ blockquote:before {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .heading {
+    margin-right: 2.5rem;
+  }
+  .card-Para {
+    font-size: 1.6rem;
+    letter-spacing: 0.4px;
+  }
+  .source {
+    font-size: 1.2rem;
   }
 }
 

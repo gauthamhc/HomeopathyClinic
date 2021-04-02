@@ -13,7 +13,7 @@
 }
 
 #about {
-  background-image: url(/Images/about_bg_image.jpg);
+  background-image: var(--light-color);
   background-size: cover;
   background-repeat: none;
   font-family: var(--font-family-2);
@@ -22,20 +22,22 @@
   font-weight: 600;
   letter-spacing: 1px;
   padding: 1rem 0;
+  text-decoration: underline;
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
 }
-.about {
+.about-info {
+  padding: 1rem;
+  letter-spacing: 0.4px;
   text-align: justify;
   font-weight: 400;
   font-size: 1.2rem;
 }
+
 .about-pic {
   text-align: center;
 }
 
-.about-info {
-  padding: 1rem;
-  letter-spacing: 0.4px;
-}
 .about-pic img {
   max-width: 200px;
   height: 200px;
@@ -44,16 +46,42 @@
   padding: 5px;
 }
 .line-break {
-  padding: 10px 0;
+  padding: 1rem 0;
+}
+
+.about-phani,
+.about-smriti {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* --Laptop Version --*/
 
 @media (min-width: 768px) {
-  .about-phani,
-  .about-smriti {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .about-heading {
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 1rem 0;
+    font-size: 2.8rem;
+  }
+  .about-pic img {
+    max-width: 280px;
+    height: 280px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .about {
+    padding: 4rem;
+  }
+  .about:last-child {
+    padding-top: 0;
+  }
+
+  .about-info {
+    max-width: 934px;
+    font-size: 1.6rem;
   }
 }
 /* Large devices (desktops, 992px and up) */
