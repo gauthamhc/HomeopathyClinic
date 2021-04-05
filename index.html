@@ -468,23 +468,23 @@
         </div>
       </div>
     </div>
-    <form id="form" class="container-fluid forms">
+    <form action="mail.php" method="post" id="form" class="container-fluid forms">
       <h2>Email Us</h2>
       <div class="form-control">
         <label for="username">Name</label>
-        <input type="text" id="username" placeholder="Enter Name" />
+        <input type="text" name="name" id="username" placeholder="Enter Name" />
       </div>
       <div class="form-control">
         <label for="email">Email</label>
-        <input type="text" id="email" placeholder="Enter email address" />
+        <input type="text" name="emailaddress" id="email" placeholder="Enter email address" />
       </div>
       <div class="form-control">
         <label for="number">Phone Number</label>
-        <input type="number" id="number" placeholder="Enter Phone Number" />
+        <input type="number" name="mobilenumber" id="number" placeholder="Enter Phone Number" />
       </div>
       <div class="form-control">
         <label for="text">Tell us your problem:</label>
-        <textarea type="text" id="username" placeholder="Your Message" class="message">
+        <textarea name="message" type="text" id="username" placeholder="Your Message" class="message">
         </textarea>
       </div>
       <button type="submit" class="btn btn-contact">Send</button>
