@@ -19,7 +19,8 @@
 }
 .icon-whatsapp {
   color: #4fce5d;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-top: 1rem;
 }
 .icon-whatsapp:hover {
   transform: scale(1.3);
@@ -89,5 +90,8 @@ textarea {
   }
   .form-control input {
     font-size: 1.2rem;
+  }
+  .icon-whatsapp {
+    font-size: 3.5rem;
   }
 }
