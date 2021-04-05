@@ -40,11 +40,12 @@
 
 .about-pic img {
   max-width: 200px;
-  height: 200px;
+  height: auto;
   width: 100%;
   border-radius: 10px;
   padding: 5px;
 }
+
 .line-break {
   padding: 1rem 0;
 }
@@ -53,7 +54,7 @@
 .about-smriti {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 /* --Laptop Version --*/

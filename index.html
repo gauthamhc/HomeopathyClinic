@@ -52,43 +52,49 @@
 
   <!-- Header section -->
   <header class="p-3">
-    <div class="container-fluid flex-center p-3">
+    <div class="container-fluid p-3 header">
       <div class="row">
-        <div class="clinic-logo col-4 col-sm-3 col-lg-2">
-          <img src="/Images/logo.JPG" alt="logo">
+        <div class="row col-lg-6">
+          <div class="clinic-logo col-4 col-sm-3 col-lg-2">
+            <img src="/Images/logo.JPG" alt="logo">
+          </div>
+          <div class="clinic-name col col-lg-8">
+            <h1>Lakshmi Homoeopathic Clinic</h1>
+          </div>
         </div>
-        <div class="clinic-name col col-lg-8">
-          <h1>Lakshmi Homoeopathic Clinic</h1>
+
+        <div class="row contact col-lg-6">
+          <div class="contact-box">
+            <h2>Appointment</h2>
+            <div class="contact-combine">
+              <div class="contact-indi">
+                <h3>Dr.Phanindranath:</h3>
+                <a href="tel: +91 9341063838" class="phone-icon">
+                  <i class="icons fas fa-phone-square-alt"></i><span class="phone-num">9341063838</span>
+                </a>
+              </div>
+              <div class="contact-indi ">
+                <h3>Dr.Smriti:</h3>
+                <a href="tel: +91 9740186287" class="phone-icon">
+                  <i class="icons fas fa-phone-square-alt"></i><span class="phone-num">9740186287</span>
+                </a><br>
+                <a href="tel: +91 7975493641" class="phone-icon">
+                  <i class="icons fas fa-phone-square-alt"></i><span class="phone-num">7975493641</span>
+                </a>
+              </div>
+              <div class="address">
+                <div class="address-inside">
+                  <a href="https://www.google.com/maps/dir//Lakshmi+Homeopathic+Clinic/@13.0665854,77.4260117,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae2339ad5bd9b5:0xa57e13b563d8c482!2m2!1d77.4960522!2d13.0665948"
+                    target="_blank"><i class="icons fas fa-map-signs"></i></a>
+                  <a class="address-text p-1">Bagalakunte, <br> Bengaluru 560073
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
-      </div>
-
-      <div class="row contact text-center">
-        <ul class="contact-box p-1 col-6 col-md-4 ">
-          <div class="contact-inside-box">
-            <a href="#"><i class="icons far fa-calendar-check"></i></a>
-          </div>
-
-          <a class="phone p-1">Appointment: <span class="phone-num"><br> <strong>093410 63838 </strong> <br>
-              <strong>097401 86287 </strong></span>
-          </a>
-        </ul>
-        <ul class="contact-box p-1 col-6 col-md-4">
-          <div class="contact-inside-box">
-            <a href="#"><i class="icons fas fa-map-signs"></i></a>
-          </div>
-
-          <a class="address hidden-sm  p-1">Bagalakunte, <br> Bengaluru 560073
-          </a>
-        </ul>
-
-        <ul class="contact-box p-1 col-12 col-md-4">
-          <div class="contact-inside-box">
-            <a href="#"><i class=" icons fas fa-calendar-check"></i></a>
-          </div>
-
-          <a class="address hidden-sm  p-1">Monday - Sunday : 10:00 - 18:00 <br> By Appointment
-          </a>
-        </ul>
 
       </div>
     </div>
@@ -115,7 +121,7 @@
             <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#testimonial">Testimonial</a>
+            <a class="nav-link" href="#testimonial">Testimonials</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -151,7 +157,7 @@
             <div class="about-info">
               <p class="about-para">
               <div class="line-break">
-                2002: batch Homoeopathic Graduate from Government Homoeopathic Medical College.
+                2002: Batch Homoeopathic Graduate from Government Homoeopathic Medical College.
               </div>
               <div class="line-break">
                 2002 - 2004 : Underwent POST GRADUATE REGULAR TRAINING PROGRAMME at M L Dhawale Memorial Rural
@@ -161,28 +167,30 @@
               </div>
               2005- till date : Private Homoeopathic Practice.
               <span id="dots">...</span><span id="more">
-                2007-2009: Served as a Rural Community Medical officer at MLDMHI, Bengaluru Branch.
-
+                <div class="line-break">
+                  2007-2009: Served as a Rural Community Medical officer at MLDMHI, Bengaluru Branch.
+                </div>
                 2010 - Worked with CHILDREN with SPECIAL NEEDS in association with TAMAHAR- Centre for children with
                 special
                 needs.
-
-                2014 onwards have been associated with Sri Sathya Sai Seva Samithi at Dandeli and Karwar. We conduct
-                monthly
-                FREE RURAL
-                MEDICAL CAMPS at Domagera Village - 1st Sunday & on 3rd Sunday at Hireshetta Village at Karwar. In these
+                <div class="line-break">
+                  2014 onwards have been associated with Sri Sathya Sai Seva Samithi at Dandeli and Karwar. We conduct
+                  monthly
+                  FREE RURAL
+                  MEDICAL CAMPS at Domagera Village - 2nd Saturday & on 2nd Sunday at Hireshetta Village at Karwar.
+                </div>
+                In these
                 camps we get to
                 see an average of 150 patients of various clinical diagnosis.
 
                 We have been treating & managing patients from all age groups for various complaints. We believe in
                 continuously
-                supporting patients and hold HOMOEOPATHIC MEDICINES as FAMILY MEDICINE....</span>
+                supporting patients and hold HOMOEOPATHIC MEDICINES as FAMILY MEDICINE....
+              </span>
               </p>
               <button class="btn-read" onclick="myFunction()" id="myBtn">Read more</button>
             </div>
           </div>
-
-
         </div>
         <div class="about">
           <h2 class="about-heading text-center">
@@ -196,32 +204,26 @@
 
               <p class="about-para">
               <div class="line-break">
-                2002: batch Homoeopathic Graduate from Government Homoeopathic Medical College.
+                2007: Batch Homoeopathy Graduate from LMF's (Lokamanya) Homoeopathic Medical College, Pune
               </div>
               <div class="line-break">
-                2002 - 2004 : Underwent POST GRADUATE REGULAR TRAINING PROGRAMME at M L Dhawale Memorial Rural
-                Homoeopathic
-                Hospital,
-                Palghar, Thane District, Maharashtra.
+                2008 : Practicising Homoepathy @ Lakshmi Homoeopathic Clinic
               </div>
-              2005- till date : Private Homoeopathic Practice.
+              2014 onwards have been associated with Sri Sathya Sai Seva Samithi at Dandeli and Karwar.
               <span id="dots1">...</span><span id="more1">
-                2007-2009: Served as a Rural Community Medical officer at MLDMHI, Bengaluru Branch.
 
-                2010 - Worked with CHILDREN with SPECIAL NEEDS in association with TAMAHAR- Centre for children with
-                special
-                needs.
+                We conduct monthly FREE RURAL MEDICAL CAMPS at Domagera Village - 2nd Saturday & on 2nd Sunday at
+                Hireshetta Village at Karwar.
+                <div class="line-break">
 
-                2014 onwards have been associated with Sri Sathya Sai Seva Samithi at Dandeli and Karwar. We conduct
-                monthly
-                FREE RURAL
-                MEDICAL CAMPS at Domagera Village - 1st Sunday & on 3rd Sunday at Hireshetta Village at Karwar. In these
-                camps we get to
-                see an average of 150 patients of various clinical diagnosis.
+                  In these
+                  camps we get to see an average of 150 patients of various clinical diagnosis.
 
-                We have been treating & managing patients from all age groups for various complaints. We believe in
-                continuously
-                supporting patients and hold HOMOEOPATHIC MEDICINES as FAMILY MEDICINE....</span>
+                  We have been treating & managing patients from all age groups for various complaints. We believe in
+                  continuously supporting patients and hold HOMOEOPATHIC MEDICINES as FAMILY MEDICINE....
+                </div>
+              </span>
+
               </p>
               <button class="btn-read" onclick="myFunction1()" id="myBtn1">Read more</button>
             </div>
@@ -234,7 +236,7 @@
 
   <!-- Testimonial Section -->
   <section id="testimonial" class="p-3">
-    <h2 class="google_review-header">Testimonials</h2>
+    <h2 class="google_review-header">Reviews</h2>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item ">
@@ -267,11 +269,11 @@
 
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item active">
           <div class="card">
             <div class="card-heading">
               <div>
-                <h2 class="heading">Swetha B</h2>
+                <h2 class="heading">Soumya Sreehari</h2>
               </div>
               <div>
                 <span class="fa fa-star checked"></span>
@@ -282,10 +284,11 @@
               </div>
             </div>
             <div class="card-Para">
-              <blockquote>My daughter is a pre mature kid. She was falling ill very often with 102 temperature. At that
-                time we
-                came to know about
-                this daughter. We took medicine for two years. Now she is fine with good health. Thanks</blockquote>
+              <blockquote>Dr. Smriti is an excellent doctor. Her patience is splendid. Ever since I started her
+                treatment,
+                my condition has been under
+                better control than it was for many years. I highly recommend her.
+              </blockquote>
             </div>
             <a href="https://www.google.com/search?hl=en-IN&gl=in&q=Lakshmi+Homeopathic+Clinic,+No+1,+3rd+Main,+Siddeshwara+Layout,+Siddedahalli,+Nagasandra+Post,+Bagalakunte,+Bengaluru,+Karnataka+560073&ludocid=11924990533108810882&lsig=AB86z5W6u8Xj0lYcBNOFaBb4FXUX#lrd=0x3bae2339ad5bd9b5:0xa57e13b563d8c482,1"
               target="_blank">
@@ -327,7 +330,7 @@
           </div>
 
         </div>
-        <div class="carousel-item active">
+        <div class="carousel-item ">
           <div class="card">
             <div class="card-heading">
               <div>
@@ -385,8 +388,8 @@
         </div>
 
         <div class="services-lists-items card-services  col col-lg-3 col-md-3 ">
-          <img src="/Images/services_lists/anxiety.png" alt="Anxiety_img">
-          <h4>Anxiety</h4>
+          <img src="/Images/services_lists/anxiety.png" alt="MentalHealth_img">
+          <h4>Mental Health</h4>
         </div>
 
         <div class="services-lists-items card-services col  col-lg-3 col-md-3">
@@ -450,51 +453,42 @@
   <!-- Contact Section -->
 
   <section id="contact" class="background">
-    <div class="container">
-      <div class="screen">
-        <div class="screen-header">
-          <div class="screen-header-left">
-            <div class="screen-header-button close"></div>
-            <div class="screen-header-button maximize"></div>
-            <div class="screen-header-button minimize"></div>
-          </div>
-          <div class="screen-header-right">
-            <div class="screen-header-ellipsis"></div>
-            <div class="screen-header-ellipsis"></div>
-            <div class="screen-header-ellipsis"></div>
-          </div>
+    <div class="contaierfluid p-1 contact">
+      <h1 class="text-center contact-heading">Contact Us</h1>
+      <div class="contact-us">
+        <div class="contact-us-whatsapp">
+          <p>Dr. Phanindranath</p>
+          <a href="https://wa.me/919341063838?text=Hi%20Dr.Phanindranath,%20Could%20you%20please%20help%20me%20with%20regards%20to:%20"
+            target="_blank"><i class=" icon-whatsapp fab fa-whatsapp"></i></a>
         </div>
-        <div class="screen-body">
-          <div class="screen-body-item left">
-            <div class="app-title">
-              <span>CONTACT</span>
-              <span>US</span>
-            </div>
-            <div class="app-contact">CONTACT INFO : 093410 63838 / 097401
-              86287</div>
-          </div>
-          <div class="screen-body-item">
-            <form class="app-form">
-              <div class="app-form-group">
-                <input class="app-form-control" placeholder="NAME">
-              </div>
-              <div class="app-form-group">
-                <input class="app-form-control" placeholder="EMAIL">
-              </div>
-              <div class="app-form-group">
-                <input class="app-form-control" placeholder="CONTACT NO">
-              </div>
-              <div class="app-form-group message">
-                <input class="app-form-control" placeholder="MESSAGE">
-              </div>
-              <div class="app-form-group buttons">
-                <button class="app-form-button">SEND</button>
-              </div>
-            </form>
-          </div>
+        <div class="contact-us-whatsapp">
+          <p>Dr. Smriti</p>
+          <a href="https://wa.me/919740186287?text=Hi%20Dr.Smriti,%20Could%20you%20please%20help%20me%20with%20regards%20to:%20"
+            target="_blank"><i class=" icon-whatsapp fab fa-whatsapp" target="_blank"></i></a>
         </div>
       </div>
     </div>
+    <form id="form" class="container-fluid forms">
+      <h2>Email Us</h2>
+      <div class="form-control">
+        <label for="username">Name</label>
+        <input type="text" id="username" placeholder="Enter Name" />
+      </div>
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter email address" />
+      </div>
+      <div class="form-control">
+        <label for="number">Phone Number</label>
+        <input type="number" id="number" placeholder="Enter Phone Number" />
+      </div>
+      <div class="form-control">
+        <label for="text">Tell us your problem:</label>
+        <textarea type="text" id="username" placeholder="Your Message" class="message">
+        </textarea>
+      </div>
+      <button type="submit" class="btn btn-contact">Send</button>
+    </form>
   </section>
 
 
@@ -508,7 +502,7 @@
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#services">Services</a></li>
-              <li><a href="#testimonial">Testimonial</a></li>
+              <li><a href="#testimonial">Testimonials</a></li>
               <li><a href="#contact">Contact Us</a></li>
             </ul>
           </div>
@@ -519,13 +513,11 @@
               Bagalakunte, Bengaluru,
               Karnataka 560073</p>
           </div>
-          <!-- <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
-                class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a
-              href="#"><i class="icon ion-social-instagram"></i></a></div> -->
+
         </div>
         <p class="copyright">Lakshmi Homoeopathic Clinic © All Rights Reserved</p>
         <div class="developer">
-          <p class="developer-title">Developed by: </p>
+          <p class="developer-title">Design & Developed by: </p>
           <a href="https://gautham-chengappa.netlify.app/" target="_blank" class="developer-name"> Gautham Chengappa</a>
         </div>
       </div>

@@ -79,3 +79,14 @@
   opacity: 1;
   transform: scale(1.1);
 }
+
+.developer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 568px) {
+  .developer {
+    flex-direction: row;
+  }
+}
