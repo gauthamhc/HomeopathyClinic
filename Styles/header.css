@@ -37,15 +37,30 @@ header h1 {
   text-align: center;
 }
 
+.contact-indi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
 .contact-combine {
   margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
 }
 
 .icons {
   margin-right: 0.3rem;
   font-size: 1.4rem;
+}
+
+.phone-icon .faceboook {
+  margin-right: 1rem;
+}
+
+.icons:hover {
+  transform: scale(1.2);
 }
 
 .phone-number {
