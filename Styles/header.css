@@ -74,10 +74,9 @@ header h1 {
 }
 
 .address-inside {
-  display: inline;
+  display: inline-block;
   margin-right: 0.8rem;
 }
-/* * // Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
   .icons {
