@@ -73,6 +73,10 @@ header h1 {
   grid-column: 1/3;
 }
 
+.address-inside {
+  display: inline;
+  margin-right: 0.8rem;
+}
 /* * // Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
@@ -84,6 +88,12 @@ header h1 {
   }
   .address {
     grid-column: 3;
+  }
+  .address-inside {
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+    margin-right: 1.2rem;
   }
 }
 /* Large devices (desktops, 992px and up) */
@@ -111,11 +121,12 @@ header h1 {
   }
   .address {
     align-self: flex-start;
+    padding-left: 1.5rem;
   }
-  .address-inside {
+  /* .address-inside {
     display: flex;
     flex-direction: column;
-  }
+  } */
   .contact {
     justify-content: flex-start;
   }
